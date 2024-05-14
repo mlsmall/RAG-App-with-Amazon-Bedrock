@@ -23,7 +23,7 @@ from langchain.chains import RetrievalQA
 
 # Bedrock clients
 bedrock = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
-bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock)
+bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock, credentials_profile_name = "default")
 
 # Data Ingestion
 def data_ingestion():

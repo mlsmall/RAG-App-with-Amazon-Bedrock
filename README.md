@@ -1,1 +1,2 @@
-# RAG-App-with-Amazon-Bedrock
+# Retrieval Augmented Generation App using LangChain and LLMs from Amazon Bedrock
+
