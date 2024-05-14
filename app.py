@@ -1,6 +1,5 @@
-import json
 import os
-import sys
+from dotenv import load_dotenv, find_dotenv
 import boto3
 import streamlit as st # to create the UI for the application
 
@@ -22,7 +21,10 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
 # Bedrock clients
-bedrock = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
+_ = load_dotenv(find_dotenv())
+ACCESS_KEY = os.environ['ACCESS_KEY']
+SECRET_KEY = os.environ['SECRET_KEY']
+bedrock = boto3.client(service_name='bedrock-runtime', region_name='us-east-1', aws_access_key_id=ACCESS_KEY, aws_secret_access_key=SECRET_KEY)
 bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock, credentials_profile_name = "default")
 
 # Data Ingestion
