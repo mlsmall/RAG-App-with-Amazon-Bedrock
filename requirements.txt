@@ -1,0 +1,6 @@
+boto3 # SDK to connect to AWS  services
+awscli
+pypdf
+langchain
+streamlit
+faiss-cpu # to do vector embeddings locally
