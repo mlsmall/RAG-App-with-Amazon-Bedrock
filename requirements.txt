@@ -1,5 +1,5 @@
 boto3 # SDK to connect to AWS  services
-awscli
+awscli # for AWS configuration
 pypdf
 langchain
 streamlit

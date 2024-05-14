@@ -22,7 +22,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
 # Bedrock clients
-bedrock = boto3.client(service_name='bedrock-runtime')
+bedrock = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
 bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock)
 
 # Data Ingestion
