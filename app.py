@@ -98,15 +98,15 @@ def main():
         with st.spinner("Generating response"):
             llm = get_titan_llm()
             vector_store_faiss = FAISS.load_local("vector_store", bedrock_embeddings, allow_dangerous_deserialization=True) 
-            answer = get_response_llm(llm, vector_store_faiss, user_query)
-            st.success(answer)
+            response = get_response_llm(llm, vector_store_faiss, user_query)
+            st.success(response)
             
     if st.button("LLama2 Output"):
         with st.spinner("Generating response"):
             llm = get_llama2_llm()
             vector_store_faiss = FAISS.load_local("vector_store", bedrock_embeddings, allow_dangerous_deserialization=True) 
-            answer = get_response_llm(llm, vector_store_faiss, user_query)
-            st.success(answer)
+            response = get_response_llm(llm, vector_store_faiss, user_query)
+            st.success(response)
 
 if __name__ == "__main__":
     main()

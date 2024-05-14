@@ -3,4 +3,4 @@ awscli
 pypdf
 langchain
 streamlit
-faiss-cpu # to do vector embeddings locally
+faiss-cpu # to create vector embeddings and store them locally
