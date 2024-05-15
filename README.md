@@ -12,7 +12,7 @@ The Amazon Bedrock library has the following LLMs available:
 - Mistral
 - Stable Diffusion by Stability
 ### Technologies Used
-This application was created using the following technologies:
+This application was developed using the following technologies:
 - Amazon Bedrock supplies the two text-generation LLMs used in this application:
   - Amazon Titan
   - Llama 2
