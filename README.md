@@ -13,7 +13,7 @@ The Amazon Bedrock library has the following LLMs available:
 - Stable Diffusion by Stability
 ### Technologies Used
 This application was developed using the following technologies:
-- Amazon Bedrock supplies the two text-generation LLMs used in this application:
+- Amazon Bedrock to supply the two text-generation LLMs used in this application:
   - Amazon Titan
   - Llama 2
 - Streamlit library to generate the graphical user interface (GUI)
