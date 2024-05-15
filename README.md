@@ -13,7 +13,7 @@ The Amazon Bedrock library has the following LLMs available:
 - Stable Diffusion by Stability
 ### Technologies Used
 This application was created using the following technologies:
-- Amazon Bedrock supplies the two text generation LLMs used in this application:
+- Amazon Bedrock supplies the two text-generation LLMs used in this application:
   - Amazon Titan
   - Llama 2
 - Streamlit library to generate the graphical user interface (GUI)
@@ -21,7 +21,7 @@ This application was created using the following technologies:
   -  Split the PDF documents into chunks
   -  Generate the embeddings from the chunks
   -  Store the embeddings in a vector store
-  -  Create a chain that accepts a query, retrieves relevant data from PDF documents, and generate a response based on the chosen LLM.
+  -  Create a chain that accepts a query, retrieves relevant data from the PDF documents, and generates a response using the chosen LLM.
 
 ### Data
 The data for this project consists of the following four books in PDF format:
@@ -40,7 +40,7 @@ The data for this project consists of the following four books in PDF format:
 ### AWS Credentials
 Before you begin, set up an IAM account in AWS and generate a secret key. You will need to put your credentials in a `.env` file.
 * Go to https://us-east-1.console.aws.amazon.com/iam/home and create a new user.
-* Click on the new user and assign it the AdministratorAccess policy.
+* Click on the new user and assign the AdministratorAccess policy to it.
 * Click on the "Security Credentials" tab, scroll below, and generate a new access key.
 * Create a `.env` file in your project directory and add:
 `ACCESS_KEY="your_AWS_access_key`
@@ -63,6 +63,6 @@ Before you begin, set up an IAM account in AWS and generate a secret key. You wi
 * Open the GUI in your browser
 `http://localhost:8501/`
 
-* Click on the `Update Vector Store` button in the side bar to create the vector store. If you add new documents to the data directory, you'll have to update the vector store again.
-* Type your query in the prompt and click either the `Llama2 Output` or the `Titan Output` button.
+* Click the `Update Vector Store` button in the sidebar to create the vector store. If you add new documents to the `data` directory in your project folder, you'll have to update the vector store again.
+* Type your query in the prompt and click the `Llama2 Output` or the `Titan Output` button.
 `What are the main differences between Einstein's and Newton's theories?`
