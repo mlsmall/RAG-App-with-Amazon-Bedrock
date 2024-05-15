@@ -38,7 +38,7 @@ The data for this project consists of the following four books in PDF format:
 * Go to a terminal and paste `git clone https://github.com/mlsmall/RAG-App-with-Amazon-Bedrock.git`
 
 ### AWS Credentials
-Before you begin, set up an IAM account in AWS and generate a secret key. You will need to put your credentials in a `.env` file.
+Before you begin, set up an IAM account in AWS and generate a secret key. You will need to put your credentials in a `.env` file. There is a small cost associated with using the generative AI models in Amazon Bedrock so be sure to check the [prices](https://aws.amazon.com/bedrock/pricing/).
 * Go to https://us-east-1.console.aws.amazon.com/iam/home and create a new user.
 * Click on the new user and assign the AdministratorAccess policy to it.
 * Click on the "Security Credentials" tab, scroll below, and generate a new access key.
